@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.Login"
+    android:background="@color/cardview_light_background"
+    >
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+<!--        Header-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avax"
+                android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_login"
+                    android:textSize="10pt"
+                    android:textColor="@color/design_default_color_on_secondary" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            app:hintTextAppearance="@style/Custom_HintStyle"
+            android:textColorHint="@color/indian_red"
+            style="@style/Custom_boxStyle"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inst_id_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_institution_id"
+                android:textSize="10pt"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:endIconMode="password_toggle"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            app:hintTextAppearance="@style/Custom_HintStyle"
+            android:textColorHint="@color/indian_red"
+            style="@style/Custom_boxStyle"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passw_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/design_default_color_on_secondary"
+                android:hint="@string/hint_password"
+                android:textSize="10pt"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round_primary"
+            android:text="@string/label_login"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/toSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_no_account"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="8pt"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

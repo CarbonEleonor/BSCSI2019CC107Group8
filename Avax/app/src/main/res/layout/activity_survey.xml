@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.Survey">
+
+    <include layout="@layout/button_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_toolbar"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="VACCINATION SURVEY"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Do you have case of fever within the last 14 days?"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/q1_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/q1_c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_q1_c1" />
+
+            <RadioButton
+                android:id="@+id/q1_c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_q1_c2" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="389dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="18dp"
+            android:text="Are you showing any ONE of the following symptoms within the last 14 days (COUGH, COLDS, SORE THROAT, OTHER RESPIRATORY SYMPTOMS.)"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/q2_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q2_c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_q2_c1" />
+
+            <RadioButton
+                android:id="@+id/q2_c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_q2_c2" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="258dp"
+            android:layout_height="28dp"
+            android:text="Which of these situations apply to you?"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/q3_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q3_c1"
+                android:layout_width="395dp"
+                android:layout_height="50dp"
+                android:text="@string/survey_q3_c1" />
+
+            <RadioButton
+                android:id="@+id/q3_c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_q3_c2" />
+
+            <RadioButton
+                android:id="@+id/q3_c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_q3_c3" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/avax"/>
+    </LinearLayout>
+</RelativeLayout>

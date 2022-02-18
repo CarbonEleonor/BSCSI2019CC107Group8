@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.omnicron.avax">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginWithAPIV2">
+
+        <meta-data android:name="io.sentry.dsn" android:value="https://06c0306a332742f48ac51a2ea7c59381@o1146901.ingest.sentry.io/6216528" />
+        <!-- Set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring.
+           We recommend adjusting this value in production. -->
+        <meta-data android:name="io.sentry.traces.sample-rate" android:value="1.0" />
+
+        <activity
+            android:name=".views.SetVaccination"
+            android:exported="false" />
+        <activity
+            android:name=".views.SignupAdditionalInfo"
+            android:exported="false" />
+        <activity
+            android:name=".views.VerifyStudent"
+            android:exported="false" />
+        <activity
+            android:name=".views.SignupBasicInfo"
+            android:exported="false" />
+        <activity
+            android:name=".views.Signup"
+            android:exported="false" />
+        <activity
+            android:name=".views.Startup"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Login"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".views.Home"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".views.News"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".views.vaccination"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".views.Infographic"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".views.Profile"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".views.About"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".views.Survey"
+            android:exported="false"
+            android:launchMode="singleTask" />
+    </application>
+
+</manifest>

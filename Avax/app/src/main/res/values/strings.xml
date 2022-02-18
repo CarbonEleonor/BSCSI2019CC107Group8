@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">AVAX</string>
+    <string name="header_title_appname">AVAX</string>
+    <string name="startup_welcome">Welcome to AVAX!</string>
+    <string name="label_already_existing"><u>Login to an existing account.</u></string>
+    <string name="label_login">Login</string>
+    <string name="label__signup">Sign Up</string>
+    <string name="header_register">Register new account</string>
+    <string name="label_create_account">Create an account</string>
+    <string name="label_no_account">No account yet? <u>Create a new one.</u></string>
+    <string name="hint_institution_id">Institution ID</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+
+    <string name="hint_givenName">Given Name</string>
+    <string name="hint_middleName">Middle Name</string>
+    <string name="hint_familyName">Family Name</string>
+    <string name="hint_suffix">Suffix</string>
+    <string name="label_nextPage">Next</string>
+    <string name="err_iid">Follow the right expression \'01\-23456\'.</string>
+    <string name="err_email">Must be a valid email address.</string>
+    <string name="err_passw">Must be more than 11 characters.</string>
+    <string name="err_emailProviders">We recommend using Gmail, Outlook, Protonmail or Yahoo! as email provider.</string>
+    <string name="err_passwSecure">Please use more secured password.</string>
+    <string name="err_sanitization">Special characters aren\'t allowed.</string>
+    <string name="err_name">Names should only have 2-25 alphabets.</string>
+    <string name="err_suffix">Accepted suffixes: Jr., Sr., Roman numerals or none</string>
+    <string name="err_vcode_invalid">Invalid validation code</string>
+    <string name="birthdate">Set birthdate</string>
+    <string name="hint_contact">Mobile Number</string>
+    <string name="hint_address1">Address Line 1</string>
+    <string name="hint_address2">Address Line 2</string>
+    <string name="hint_city">City</string>
+    <string name="one_last_step">One last step</string>
+    <string name="hint_birthdate">Set birthdate</string>
+    <string name="label_contact_info">Contact Information</string>
+    <string name="label_skip">Skip</string>
+    <string name="hint_gender">Gender</string>
+    <string name="err_gender">Gender cannot be empty</string>
+    <string name="err_bdate">Invalid date format</string>
+    <string name="err_mobilePhone">Invalid phone number</string>
+    <string name="err_city">City should have 2 or more alphabets.</string>
+    <string name="label_send_code">Send Verification</string>
+    <string name="err_prompt_accountNotAllowed">You are not allowed to create an account, please make sure you are a student of this institution.</string>
+
+    <string name="home">Home</string>
+    <string name="survey">Declare your daily health record!</string>
+    <string name="err_address1">Invalid address</string>
+    <string name="survey_q3_c1">Had direct contact with confirmed or probable case of COVID-19 within the last 14 days before the patient first started showing respiratory symptoms until the patient became negative on repeat testing.</string>
+    <string name="survey_q3_c2">No medical history or possible causes that fully explains the present influenza-like illness AND a history of travel to or residence in an area that reported local transmission of COVID-19 during 14 days before the start of the symptoms</string>
+    <string name="survey_q3_c3">Both cases do not apply to me</string>
+    <string name="survey_q2_c2">No, I\'m not showing any symptoms</string>
+    <string name="survey_q2_c1">I am currently showing one or more of the symptoms</string>
+    <string name="survey_q1_c2">No. I don\'t have a fever</string>
+    <string name="survey_q1_c1">Yes, I have a fever (more than 37.7)</string>
+    <string name="declare_vax_status">Set your vaccination status.</string>
+    <string name="err_vax_status">Status must be have value.</string>
+    <string name="about">AVAX is an application made to record health and vaccination status among the students of Taguig City University. The developers will never disclose any information within this app and the data that it collected will follow the rules upon the implementation of <b> Data Privacy Act of 2012 </b>.</string>
+
+    <string-array name="genders_arr">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="vax_status_arr">
+        <item>vaccinated</item>
+        <item>unvaccinated</item>
+        <item>boostered</item>
+    </string-array>
+</resources>
