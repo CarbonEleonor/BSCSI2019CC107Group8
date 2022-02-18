@@ -1,0 +1,10 @@
+USE covidsys;
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE user_info;
+TRUNCATE user_health;
+TRUNCATE user_vaccination;
+TRUNCATE refresh_tokens;
+TRUNCATE user_cred;
+TRUNCATE verification_codes;
+TRUNCATE refresh_tokens;
+SET FOREIGN_KEY_CHECKS = 1;

@@ -1,0 +1,43 @@
+-- user cred: cred
+-- user health: health
+-- user info: info
+-- user vaccination: vax
+
+use covidsys;
+-- CREATE VIEW user_profile AS (
+--     SELECT 
+--         cred.uid,
+--         cred.institution_id,
+--         cred.email,
+--         cred.creationDate,
+--         info.givenName,
+--         info.middleName,
+--         info.familyName,
+--         info.suffix,
+--         info.birthdate,
+--         info.phoneNumber,
+--         info.addressLine1,
+--         info.addressLine2,
+--         info.city,
+--         info.infoLastUpdated,
+--         health.healthStatus,
+--         health.report,
+--         health.healthLastUpdated,
+--         vax.vaccinationStatus,
+--         vax.vaccinationLastUpdated
+--     FROM 
+--         user_cred cred
+--     LEFT JOIN
+--         user_info info
+--     ON
+--         cred.uid = info.uid
+--     LEFT JOIN
+--         user_health health
+--     ON
+--         cred.uid = health.uid
+--     LEFT JOIN
+--         user_vaccination vax
+--     ON
+--         cred.uid = vax.uid
+-- );
+SELECT*FROM user_profile;
